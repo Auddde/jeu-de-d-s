@@ -1,0 +1,43 @@
+header {
+    background-color: black;
+    padding : 15px 0px 35px 0px;
+    text-align: center;
+    color: white;
+}
+
+.screens {  
+    @media screen and (max-width: 600px) {
+        flex-wrap: wrap;
+    }
+}
+
+.screen1 {
+    background-color: white;
+    width : 50%;
+    padding-bottom: 50px;
+}
+
+.screen2 {
+    background-color: lightgrey;
+    width: 50%;    
+    padding-bottom: 50px;
+}
+
+.ongoing-points {
+    background-color: $primary;
+    padding : 10px 10px 10px 10px;
+    color: white;
+    font-size: 1.4em;
+}
+
+.interactive-game {
+    position: absolute; 
+    width: 100%; 
+    top: 50%; 
+    text-align: center;
+    @media screen and (max-width: 600px) {
+        position:inherit; 
+        width: 100%; 
+        text-align: center;
+    }
+}

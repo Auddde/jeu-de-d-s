@@ -1,0 +1,33 @@
+// FONT
+
+%texte {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+%breadcrumb-size {
+    font-size: 0.8em;
+}
+
+h1 {
+    font-size: 2.3em;
+    margin: 10px;
+    @extend %texte;
+}
+
+.total-player {
+    color: black;
+    font-size: 4em;
+    text-align: center;
+    @media screen and (max-width: $m) {
+        font-size: 3em;
+    }
+    @media screen and (max-width: $s) {
+        font-size: 2.4em;
+    }
+}
+
+.slogan {
+    margin-left: 15px;
+    margin-right:15px;
+    color: white;
+}
