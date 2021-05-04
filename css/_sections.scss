@@ -6,7 +6,7 @@ header {
 }
 
 .screens {  
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 550px) {
         flex-wrap: wrap;
     }
 }
@@ -35,9 +35,10 @@ header {
     width: 100%; 
     top: 50%; 
     text-align: center;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 550px) {
         position:inherit; 
         width: 100%; 
         text-align: center;
+        margin-top: 15px;
     }
 }
