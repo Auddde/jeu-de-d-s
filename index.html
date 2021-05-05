@@ -14,6 +14,7 @@
             <h1>Combat de coqs</h1>
             <span class="slogan">Picore 100 maïs pour devenir le roi de la basse-cour !</span><br>
             <button class= "btn-new">Nouvelle partie</button>
+            <h2 id="test">ici le test</h2>
         </div>
     </header>
 
@@ -22,10 +23,10 @@
             <div class="textalign-center">
                 <h2>Aude</h2>
                 <img src="images/avatar1.png" class="avatar">
-                <div class="total-player">0 maïs</div>
+                <div class="total-player"  id="player1Global">0</div>
                 <div class="ongoing-points">
                     En cours<br>
-                    <b>0 maïs</b>
+                    <span id="divScoreCurrentPlayer1"><b>0</b></span>
                 </div>
             </div>
         </div>
@@ -34,10 +35,10 @@
             <div class="textalign-center">
                 <h2>Aude</h2>
                 <img src="images/avatar1.png" class="avatar">
-                <div class="total-player">0 maïs</div>
+                <div class="total-player" id="player2Global">0</div>
                 <div class="ongoing-points">
                     En cours<br>
-                    <b>0 maïs</b>
+                    <span id="divScoreCurrentPlayer2"><b>0 maïs</b></span>
                 </div>
             </div>
         </div>
@@ -45,11 +46,11 @@
         <div class="interactive-game">
             <div class="des">
             </div>
-            <button>Lancer le dé</button><br>
-            <button>Récupérer mes maïs</button>
+            <button id="dice">Lancer le dé</button><br>
+            <button id="recover">Récupérer mes maïs</button>
         </div>
     
-    </div>
+    </div> 
 
 
     <script src="js/script.js"></script>
