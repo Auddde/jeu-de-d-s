@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
     <title>Combat de coqs</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header class="container-fluid">
+    <header class="container-fluid" style = "z-index: 999;">
         <div class="col-start-1 col-end-13 position-relative">
-            <h1>Combat de coqs</h1>
+            <div class="flex justifycontent-center">
+                <img src="images/logo.gif" style="width:50px; height: 72px;">
+                <h1>Combat de coqs</h1>
+            </div>
             <span class="slogan">Picore 100 maïs pour devenir le roi de la basse-cour !</span><br>
             <button class= "btn-new">Nouvelle partie</button>
         </div>
@@ -35,18 +39,23 @@
         </div>
 
         <div class="interactive-game">
-            <button id="dice">Lancer le dé</button><br>
+    
+                <button id="dice">
+                    <div class="triangle"></div>
+                    <div style="margin-bottom:5px;"><b>Aude</b><br>Lance le dés !</div>
+                    <div class="des dice" id="diceImage" style="background-size: cover;">
+                    </div>
+                </button>
+    
+                <div class="">
+                    ou 
+                </div>
+                <button id="recover">Récupérer tes <span id="divScoreCurrent"><b>0 </b></span> maïs</button>
             
-            <div class="des">
-            </div>
- 
-            <div class="">
-                <span id="divScoreCurrent"><b>0 maïs</b></span>
-            </div>
-            <button id="recover">Récupérer mes maïs</button>
         </div>
     </div> 
 
+    
 
     <script src="js/script.js"></script>
     <noscript><p>Merci d'activer Javasript !</p></noscript>
