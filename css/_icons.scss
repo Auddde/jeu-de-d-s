@@ -25,14 +25,14 @@ button {
 }
 
 button:hover {
-    background-color: darken($primary, 20%);
+    background-color: #12bb4a;
     color: white;
 }
 
 .btn-new {
     position: absolute; 
-    right: 5px; 
-    top: 5px;
+    right: 15px; 
+    top: 40%;
 }
 
 // Avatar
@@ -51,8 +51,7 @@ button:hover {
     margin: 0 auto; 
     margin-bottom: 10px;
     border-radius: 10px;
-    border-style: solid;
-    border-color: darken($primary, 10%);
+    box-shadow: 7px 7px 7px #0f4d24;
 }
 
 .imageDice {
@@ -68,10 +67,18 @@ button:hover {
 display : inline-block;
 height : 10px;
 width : 10px;
+top: 18px;  
 border-top : 12px solid transparent;
-border-right : 20px solid $primary;
 border-bottom : 8px solid transparent;
 position: absolute;    
-top:15px;  
-left: -15px
 }
+
+.triangle1 { 
+    border-right : 20px solid $primary;
+    left: -22px
+    }
+
+.triangle2 { 
+    border-left : 20px solid $primary;
+    right : -22px
+    }

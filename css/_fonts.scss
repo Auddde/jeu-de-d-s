@@ -15,20 +15,17 @@ h1 {
     font-family: 'Permanent Marker', cursive;
 }
 
-.total-player {
-    color: black;
-    font-size: 4em;
-    text-align: center;
-    @media screen and (max-width: $m) {
-        font-size: 3em;
-    }
-    @media screen and (max-width: $s) {
-        font-size: 2.4em;
-    }
+h2 {
+    margin : 0;
 }
 
 .slogan {
     margin-left: 15px;
     margin-right:15px;
     color: white;
+}
+.or {
+    font-size: 1.5em; 
+    color:green; 
+    padding-top:10px; 
 }

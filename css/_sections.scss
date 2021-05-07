@@ -11,32 +11,36 @@ header {
     }
 }
 
-.screen1 {
-    background-color: white;
+.screen {
     width : 50%;
-}
-
-.screen2 {
-    background-color: lightgrey;
-    width: 50%;    
-}
-
-.ongoing-points {
-    background-color: $primary;
-    padding : 10px 10px 10px 10px;
-    color: white;
-    font-size: 1.4em;
 }
 
 .interactive-game {
     position: absolute; 
     width: 100%; 
-    top: 50%; 
+    top: 30%; 
     text-align: center;
     @media screen and (max-width: 550px) {
         position:inherit; 
         width: 100%; 
         text-align: center;
         margin-top: 15px;
+    }
+}
+
+
+
+.total-player {
+    color: white;
+    font-size: 4em;
+    text-align: center;
+    background-color:black;
+    border-radius : 20px;
+    background: linear-gradient(180deg, rgba(33,99,64,1) 50%, rgba(9,9,9,1) 100%);
+    @media screen and (max-width: $m) {
+        font-size: 3em;
+    }
+    @media screen and (max-width: $s) {
+        font-size: 2.4em;
     }
 }

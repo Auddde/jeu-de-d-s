@@ -17,45 +17,47 @@
                 <h1>Combat de coqs</h1>
             </div>
             <span class="slogan">Picore 100 maïs pour devenir le roi de la basse-cour !</span><br>
-            <button class= "btn-new">Nouvelle partie</button>
+            <button class= "btn-new">+ Nouvelle partie</button>
         </div>
     </header>
 
     <div class="container-fluid flex position-relative screens">
-        <div class="screen1 flex justifycontent-center">
-            <div class="textalign-center">
-                <h2>Aude</h2>
-                <img src="images/avatar1.png" class="avatar">
+        <div class="screen flex justifycontent-center">
+            <div class="textalign-center" style="background-color: white; padding:10px; margin-top:20px; border-radius : 30px;">
+                <h2 id="player1"></h2>
                 <div class="total-player"  id="player1Global">0</div>
+                <img src="images/poulet2.jpg" class="avatar">
             </div>
         </div>
 
-        <div class="screen2 flex justifycontent-center">
-            <div class="textalign-center">
-                <h2>Aude</h2>
-                <img src="images/avatar1.png" class="avatar">
+        <div class="screen flex justifycontent-center">
+            <div class="textalign-center" style="background-color: white; padding:10px; margin-top:20px; border-radius : 30px;">
+                <h2 id="player2"></h2>
                 <div class="total-player" id="player2Global">0</div>
+                <img src="images/poulet3.jpg" class="avatar">
             </div>
         </div>
 
         <div class="interactive-game">
     
                 <button id="dice">
-                    <div class="triangle"></div>
-                    <div style="margin-bottom:5px;"><b>Aude</b><br>Lance le dés !</div>
+                    <div class="triangle1 triangle" id="triangle1"></div>
+                    <div class="triangle2 triangle" id="triangle2"></div>
+                    <div style="margin-bottom:5px; font-size:1.3em;">
+                        <div id="prenomCurrent"></div>
+                        Lance le dés !
+                    </div>
                     <div class="des dice" id="diceImage" style="background-size: cover;">
                     </div>
                 </button>
-    
-                <div class="">
-                    ou 
-                </div>
-                <button id="recover">Récupérer tes <span id="divScoreCurrent"><b>0 </b></span> maïs</button>
-            
+                <div id="divInteractions">
+                    <div class="or" id="or">
+                        <b>ou</b>
+                    </div>
+                    <button id="recover" style="font-size:1.2em; margin-top:10px;"><span id="divScoreCurrent"></span></button>
+                </div>        
         </div>
     </div> 
-
-    
 
     <script src="js/script.js"></script>
     <noscript><p>Merci d'activer Javasript !</p></noscript>
