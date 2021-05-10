@@ -4,9 +4,6 @@
 }
 
 body {
-  background-image: url(../images/background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   margin: 0 auto;
   font-size: 16px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -572,8 +569,18 @@ h1 {
   font-family: 'Permanent Marker', cursive;
 }
 
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 2em;
+    line-height: 1em;
+  }
+}
+
 h2 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2em;
   margin: 0;
+  color: #1b8a4f;
 }
 
 .slogan {
@@ -586,6 +593,30 @@ h2 {
   font-size: 1.5em;
   color: green;
   padding-top: 10px;
+}
+
+/* HIDE RADIO */
+[type=radio] {
+  opacity: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+  outline: 3px solid #1b8a4f;
+}
+
+legend {
+  font-weight: bold;
+  font-family: 'Permanent Marker', cursive;
+}
+
+fieldset:first-child {
+  margin-bottom: 15px;
 }
 
 .icon-s {
@@ -622,13 +653,18 @@ button:hover {
   top: 40%;
 }
 
+.btn-startgame {
+  font-size: 1.2em;
+  margin-top: 15px;
+}
+
 .avatar {
   width: 200px;
 }
 
 @media screen and (max-width: 768px) {
   .avatar {
-    width: 100px;
+    width: 170px;
   }
 }
 
@@ -652,14 +688,28 @@ button:hover {
   position: relative;
 }
 
+@media screen and (max-width: 550px) {
+  #dice {
+    width: 90%;
+  }
+}
+
 .triangle {
   display: inline-block;
   height: 10px;
   width: 10px;
   top: 18px;
   border-top: 12px solid transparent;
-  border-bottom: 8px solid transparent;
+  border-bottom: 12px solid transparent;
   position: absolute;
+}
+
+@media screen and (max-width: 550px) {
+  .triangle {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    top: -25px;
+  }
 }
 
 .triangle1 {
@@ -667,16 +717,56 @@ button:hover {
   left: -22px;
 }
 
+@media screen and (max-width: 550px) {
+  .triangle1 {
+    left: 20%;
+  }
+}
+
 .triangle2 {
   border-left: 20px solid #1b8a4f;
   right: -22px;
 }
 
+@media screen and (max-width: 550px) {
+  .triangle2 {
+    border-left: none;
+    border-right: 20px solid #1b8a4f;
+    right: 20%;
+  }
+}
+
+.thumbnail {
+  width: 50px;
+  border-radius: 50%;
+}
+
 header {
   background-color: black;
-  padding: 15px 0px 35px 0px;
+  padding: 15px 10px 35px 10px;
   text-align: center;
   color: white;
+  height: 20vh;
+}
+
+.game {
+  height: 80vh;
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pregame {
+  padding: 30px;
+  margin-bottom: 30px;
+  max-width: 350px;
+  max-height: 580px;
+}
+
+.error {
+  color: #760707;
+  background-color: #f7d3d3;
+  padding: 15px;
 }
 
 @media screen and (max-width: 550px) {
@@ -688,6 +778,7 @@ header {
 
 .screen {
   width: 50%;
+  margin-bottom: 30px;
 }
 
 .interactive-game {
@@ -699,7 +790,8 @@ header {
 
 @media screen and (max-width: 550px) {
   .interactive-game {
-    position: inherit;
+    position: -webkit-sticky;
+    position: sticky;
     width: 100%;
     text-align: center;
     margin-top: 15px;

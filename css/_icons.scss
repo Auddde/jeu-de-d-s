@@ -35,11 +35,16 @@ button:hover {
     top: 40%;
 }
 
+.btn-startgame {
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
 // Avatar
 .avatar {
     width : 200px;
     @media screen and (max-width: $m) {
-        width: 100px;
+        width: 170px;
     }
 }
 
@@ -60,6 +65,9 @@ button:hover {
 }
 #dice {
     position: relative;
+    @media screen and (max-width: 550px) {
+        width: 90%; 
+    }
 }
 
 // cursor 
@@ -69,16 +77,33 @@ height : 10px;
 width : 10px;
 top: 18px;  
 border-top : 12px solid transparent;
-border-bottom : 8px solid transparent;
+border-bottom : 12px solid transparent;
 position: absolute;    
+@media screen and (max-width: 550px) {
+    transform : rotate(90deg);
+    top: -25px;
+}
 }
 
 .triangle1 { 
     border-right : 20px solid $primary;
-    left: -22px
+    left: -22px;
+    @media screen and (max-width: 550px) {
+        left: 20%;
+    }
     }
 
 .triangle2 { 
     border-left : 20px solid $primary;
-    right : -22px
+    right : -22px;
+    @media screen and (max-width: 550px) {
+        border-left : none;
+        border-right : 20px solid $primary;
+        right: 20%;
+    }    
     }
+
+.thumbnail {
+    width: 50px;
+    border-radius: 50%
+}

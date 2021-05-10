@@ -13,10 +13,17 @@ h1 {
     margin: 10px;
     @extend %texte;
     font-family: 'Permanent Marker', cursive;
+    @media screen and (max-width:420px) {
+        font-size: 2em;
+        line-height: 1em;
+    }    
 }
 
 h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2em;
     margin : 0;
+    color : $primary;
 }
 
 .slogan {
@@ -28,4 +35,28 @@ h2 {
     font-size: 1.5em; 
     color:green; 
     padding-top:10px; 
+}
+
+/* HIDE RADIO */
+
+[type=radio] {
+    opacity: 0;
+}
+  
+  /* IMAGE STYLES */
+  [type=radio] + img {
+    cursor: pointer;
+  }
+  
+  /* CHECKED STYLES */
+  [type=radio]:checked + img {
+    outline: 3px solid $primary;
+  }
+
+legend {
+    font-weight: bold;
+    font-family: 'Permanent Marker', cursive;
+}
+fieldset:first-child {
+    margin-bottom:15px;
 }

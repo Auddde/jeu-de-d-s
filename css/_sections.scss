@@ -1,8 +1,30 @@
 header {
     background-color: black;
-    padding : 15px 0px 35px 0px;
+    padding : 15px 10px 35px 10px;
     text-align: center;
     color: white;
+    height: 20vh;
+
+}
+
+.game {
+    height:80vh;    
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pregame {
+    padding : 30px;
+    margin-bottom: 30px;
+    max-width: 350px;
+    max-height: 580px;
+}
+
+.error {
+    color: #760707; 
+    background-color: #f7d3d3;
+    padding : 15px;
 }
 
 .screens {  
@@ -13,6 +35,7 @@ header {
 
 .screen {
     width : 50%;
+    margin-bottom: 30px;
 }
 
 .interactive-game {
@@ -21,7 +44,7 @@ header {
     top: 30%; 
     text-align: center;
     @media screen and (max-width: 550px) {
-        position:inherit; 
+        position:sticky; 
         width: 100%; 
         text-align: center;
         margin-top: 15px;
