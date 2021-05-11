@@ -61,7 +61,7 @@ function partie () {
         game.style.display = '';
                     
         // Points to reach to win
-        let toReach = 10;
+        let toReach = 20;
 
         // Objet Player
         function Player (firstname, hand, global) {
