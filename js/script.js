@@ -5,6 +5,10 @@ game.style.display = 'none';
 var btnNew = document.getElementById('btnNew')
 btnNew.style.display ='none';
 
+var winner = document.getElementById('winner')
+var winnerName = document.getElementById('winnerName')
+winner.style.display = 'none';
+
 /* ////////////////////////////////   PREGAMING CODE  ///////////////////////////////////////// */
 var startGame = document.getElementById('startGame')
 startGame.addEventListener('click', pregaming)
@@ -51,14 +55,13 @@ function pregaming () {
     }
 }
 
-
 /* ////////////////////////////////   GAMING CODE  ///////////////////////////////////////// */
 // Start Game
 function partie () {
         game.style.display = '';
                     
         // Points to reach to win
-        let toReach = 20;
+        let toReach = 10;
 
         // Objet Player
         function Player (firstname, hand, global) {
@@ -165,19 +168,16 @@ function partie () {
                 prenomDivCurrent.innerHTML = players[playerWait].firstname
                 diceImage.innerHTML = `<img src="images/dice-0.png" class="imageDice">`
                 currentDice = 0 // reinitialize le dé
-       
-            // Done
-            if  ( (players[0].global > toReach) || (players[1].global > toReach)) {
-                alert('Partie terminée !')
-            } 
-
+    
             // Want a new game !
-            btnNew.style.display ='block';
-            btnNew.addEventListener('click', () => {
+            btnNew.style.display ='';
+
+            function wantANewGame() {
                 error.style.backgroundColor = "white";
                 error.innerHTML=''
                 var form = document.getElementById('form')
                 form.reset() // formulaire pregame reset
+                winner.style.display = 'none';
                 btnNew.style.display = 'none';
                 pregame.style.display = '';
                 game.style.display = 'none';
@@ -186,7 +186,16 @@ function partie () {
                 players[playerWait].global = 0
                 player1DivGlobal.innerHTML = 0
                 player2DivGlobal.innerHTML = 0
-            })            
+            }
+            btnNew.addEventListener('click', wantANewGame ) 
+            
+            // Done
+            if  ( (players[0].global > toReach) || (players[1].global > toReach)) {
+                winner.style.display =''
+                players[0].global > toReach ? winnerName.innerHTML = players[0].firstname : winnerName.innerHTML = players[1].firstname
+                let btnNew2 = document.getElementById('btnNew2')
+                btnNew2.addEventListener('click', wantANewGame)
+            }
         }
 
         var recover = document.getElementById('recover')

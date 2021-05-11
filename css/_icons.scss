@@ -1,3 +1,10 @@
+// Logo
+
+.logo {
+    width:50px; 
+    height: 72px;
+}
+
 // ICONS
 .icon-s {
     width: 20px; 
@@ -33,6 +40,10 @@ button:hover {
     position: absolute; 
     right: 15px; 
     top: 40%;
+    @media screen and (max-width: $m) {
+        position: static;    
+        margin-top: 10px;
+    }
 }
 
 .btn-startgame {
@@ -45,6 +56,12 @@ button:hover {
     width : 200px;
     @media screen and (max-width: $m) {
         width: 170px;
+    }
+    @media screen and (max-width: 415px) {
+        width: 100px;
+    }
+    @media screen and (max-width: 315px) {
+        width: 80px;
     }
 }
 
@@ -60,14 +77,20 @@ button:hover {
 }
 
 .imageDice {
-    width:100%;
     border-radius: 10px;
+    max-width: 100px;
 }
+
 #dice {
     position: relative;
     @media screen and (max-width: 550px) {
         width: 90%; 
+        margin-bottom: 20px;
     }
+}
+
+#diceImage {
+    background-size: cover;
 }
 
 // cursor 
@@ -79,10 +102,10 @@ top: 18px;
 border-top : 12px solid transparent;
 border-bottom : 12px solid transparent;
 position: absolute;    
-@media screen and (max-width: 550px) {
-    transform : rotate(90deg);
-    top: -25px;
-}
+    @media screen and (max-width: 550px) {
+        transform : rotate(90deg);
+        top: -25px;
+    }
 }
 
 .triangle1 { 
@@ -101,9 +124,15 @@ position: absolute;
         border-right : 20px solid $primary;
         right: 20%;
     }    
-    }
+ }
 
 .thumbnail {
     width: 50px;
     border-radius: 50%
+}
+
+// Winner image
+
+.couronne {
+    width: 150px;
 }

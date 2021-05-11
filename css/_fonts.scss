@@ -1,18 +1,13 @@
 // FONT
 
 %texte {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-%breadcrumb-size {
-    font-size: 0.8em;
+    font-family: 'Permanent Marker', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
     font-size: 2.5em;
-    margin: 10px;
     @extend %texte;
-    font-family: 'Permanent Marker', cursive;
+    margin: 10px;
     @media screen and (max-width:420px) {
         font-size: 2em;
         line-height: 1em;
@@ -20,7 +15,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Permanent Marker', cursive;
+    @extend %texte;
     font-size: 2em;
     margin : 0;
     color : $primary;
@@ -31,6 +26,7 @@ h2 {
     margin-right:15px;
     color: white;
 }
+
 .or {
     font-size: 1.5em; 
     color:green; 
@@ -44,19 +40,40 @@ h2 {
 }
   
   /* IMAGE STYLES */
-  [type=radio] + img {
+[type=radio] + img {
     cursor: pointer;
-  }
+}
   
-  /* CHECKED STYLES */
-  [type=radio]:checked + img {
+/* CHECKED STYLES */
+[type=radio]:checked + img {
     outline: 3px solid $primary;
-  }
+}
 
 legend {
     font-weight: bold;
     font-family: 'Permanent Marker', cursive;
 }
+
 fieldset:first-child {
     margin-bottom:15px;
+}
+
+.winnerName {
+    @extend %texte;
+    font-size: 3em;
+}
+
+// Dice and recover text
+
+.instructions {
+    margin-bottom:5px; 
+}
+
+#recover {
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+#recover, .instructions {
+    font-size:1.3em;
 }

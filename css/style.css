@@ -10,6 +10,12 @@ body {
   height: 100vh;
 }
 
+@media screen and (max-height: 730px) {
+  body {
+    height: auto;
+  }
+}
+
 .container {
   display: -ms-grid;
   display: grid;
@@ -559,14 +565,13 @@ body {
   }
 }
 
-h1 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+h1, h2, .winnerName {
+  font-family: 'Permanent Marker', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
   font-size: 2.5em;
   margin: 10px;
-  font-family: 'Permanent Marker', cursive;
 }
 
 @media screen and (max-width: 420px) {
@@ -577,7 +582,6 @@ h1 {
 }
 
 h2 {
-  font-family: 'Permanent Marker', cursive;
   font-size: 2em;
   margin: 0;
   color: #1b8a4f;
@@ -619,6 +623,28 @@ fieldset:first-child {
   margin-bottom: 15px;
 }
 
+.winnerName {
+  font-size: 3em;
+}
+
+.instructions {
+  margin-bottom: 5px;
+}
+
+#recover {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#recover, .instructions {
+  font-size: 1.3em;
+}
+
+.logo {
+  width: 50px;
+  height: 72px;
+}
+
 .icon-s {
   width: 20px;
   height: 20px;
@@ -653,6 +679,13 @@ button:hover {
   top: 40%;
 }
 
+@media screen and (max-width: 768px) {
+  .btn-new {
+    position: static;
+    margin-top: 10px;
+  }
+}
+
 .btn-startgame {
   font-size: 1.2em;
   margin-top: 15px;
@@ -668,6 +701,18 @@ button:hover {
   }
 }
 
+@media screen and (max-width: 415px) {
+  .avatar {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 315px) {
+  .avatar {
+    width: 80px;
+  }
+}
+
 .des {
   background-color: white;
   width: 100px;
@@ -680,8 +725,8 @@ button:hover {
 }
 
 .imageDice {
-  width: 100%;
   border-radius: 10px;
+  max-width: 100px;
 }
 
 #dice {
@@ -691,7 +736,12 @@ button:hover {
 @media screen and (max-width: 550px) {
   #dice {
     width: 90%;
+    margin-bottom: 20px;
   }
+}
+
+#diceImage {
+  background-size: cover;
 }
 
 .triangle {
@@ -741,12 +791,39 @@ button:hover {
   border-radius: 50%;
 }
 
+.couronne {
+  width: 150px;
+}
+
 header {
   background-color: black;
   padding: 15px 10px 35px 10px;
   text-align: center;
   color: white;
   height: 20vh;
+}
+
+@media screen and (max-height: 730px) {
+  header {
+    height: auto;
+  }
+}
+
+.pregame {
+  padding: 30px;
+  margin: 10px 10px 30px 10px;
+  width: 80%;
+  height: 80%;
+  max-width: 350px;
+  max-height: 580px;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.error {
+  color: #760707;
+  background-color: #f7d3d3;
+  padding: 15px;
 }
 
 .game {
@@ -756,17 +833,10 @@ header {
   background-repeat: no-repeat;
 }
 
-.pregame {
-  padding: 30px;
-  margin-bottom: 30px;
-  max-width: 350px;
-  max-height: 580px;
-}
-
-.error {
-  color: #760707;
-  background-color: #f7d3d3;
-  padding: 15px;
+@media screen and (max-height: 730px) {
+  .game {
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -778,7 +848,21 @@ header {
 
 .screen {
   width: 50%;
+  padding: 5px;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 415px) {
+  .screen {
+    width: 40%;
+  }
+}
+
+.poulet-section {
+  background-color: white;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 30px;
 }
 
 .interactive-game {
@@ -818,6 +902,23 @@ header {
   .total-player {
     font-size: 2.4em;
   }
+}
+
+.winner {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.winner-modal {
+  margin: 30px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px;
 }
 
 .flex {

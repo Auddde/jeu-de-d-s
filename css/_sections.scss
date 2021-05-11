@@ -4,27 +4,40 @@ header {
     text-align: center;
     color: white;
     height: 20vh;
-
+    @media screen and (max-height: 730px) {
+        height: auto;
+    }
 }
 
-.game {
-    height:80vh;    
-    background-image: url(../images/background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+// Pregame
 
 .pregame {
     padding : 30px;
-    margin-bottom: 30px;
+    margin: 10px 10px 30px 10px;
+    width: 80%;
+    height: 80%; 
     max-width: 350px;
     max-height: 580px;
+    background-color: white;  
+    border-radius : 30px;   
 }
 
 .error {
     color: #760707; 
     background-color: #f7d3d3;
     padding : 15px;
+}
+
+// Game
+
+.game {
+    height:80vh;    
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media screen and (max-height: 730px) {
+        height: auto;
+    }
 }
 
 .screens {  
@@ -34,8 +47,19 @@ header {
 }
 
 .screen {
-    width : 50%;
+    width: 50%;
+    padding: 5px;
     margin-bottom: 30px;
+    @media screen and (max-width: 415px) {
+        width: 40%; 
+    }
+}
+
+.poulet-section {
+    background-color: white; 
+    padding:10px; 
+    margin-top:20px; 
+    border-radius : 30px;
 }
 
 .interactive-game {
@@ -51,8 +75,6 @@ header {
     }
 }
 
-
-
 .total-player {
     color: white;
     font-size: 4em;
@@ -66,4 +88,22 @@ header {
     @media screen and (max-width: $s) {
         font-size: 2.4em;
     }
+}
+
+// Winner Modal
+
+.winner {
+    background : rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.winner-modal {
+    margin : 30px;
+    background-color: white;
+    border-radius: 15px;
+    padding:15px;
 }
