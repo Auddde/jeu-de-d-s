@@ -813,7 +813,7 @@ header {
   padding: 30px;
   margin: 10px 10px 30px 10px;
   width: 80%;
-  height: 80%;
+  height: 100%;
   max-width: 350px;
   max-height: 580px;
   background-color: white;
