@@ -30,12 +30,14 @@ h2 {
     margin-left: 15px;
     margin-right:15px;
     color: white;
+    @media screen and (max-width: 450px) {
+        font-size: 0.8em;
+    }
 }
 
 .or {
     font-size: 1.5em; 
     color:green; 
-    padding-top:10px; 
 }
 
 /* HIDE RADIO */

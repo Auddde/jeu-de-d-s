@@ -604,10 +604,15 @@ h2 {
   color: white;
 }
 
+@media screen and (max-width: 450px) {
+  .slogan {
+    font-size: 0.8em;
+  }
+}
+
 .or {
   font-size: 1.5em;
   color: green;
-  padding-top: 10px;
 }
 
 /* HIDE RADIO */
@@ -658,6 +663,12 @@ fieldset {
 .logo {
   width: 50px;
   height: 72px;
+}
+
+@media screen and (max-width: 350px) {
+  .logo {
+    display: none;
+  }
 }
 
 .icon-s {
@@ -752,7 +763,7 @@ button:hover {
 @media screen and (max-width: 550px) {
   #dice {
     width: 90%;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
 }
 
@@ -822,6 +833,12 @@ header {
 @media screen and (max-height: 730px) {
   header {
     height: auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  header {
+    padding: 0px;
   }
 }
 
@@ -901,7 +918,6 @@ header {
     position: sticky;
     width: 100%;
     text-align: center;
-    margin-top: 15px;
   }
 }
 

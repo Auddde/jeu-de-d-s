@@ -7,6 +7,9 @@ header {
     @media screen and (max-height: 730px) {
         height: auto;
     }
+    @media screen and (max-width: 550px) {
+        padding : 0px;
+    }
 }
 
 // Pregame
@@ -73,7 +76,6 @@ header {
         position:sticky; 
         width: 100%; 
         text-align: center;
-        margin-top: 15px;
     }
 }
 
