@@ -78,9 +78,8 @@
                             <img src="images/avatar3.gif" class="thumbnail">
                         </label>           
                     </fieldset>      
-                    <button class="btn-startgame" id="startGame">Commencer la partie</button>                     
                 </form>
-                         
+                <button class="btn-startgame" id="startGame">Commencer la partie</button>
             </div>
     </div> 
 
