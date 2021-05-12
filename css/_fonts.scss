@@ -58,6 +58,10 @@ fieldset:first-child {
     margin-bottom:15px;
 }
 
+fieldset {
+    margin : 8px;
+}
+
 .winnerName {
     @extend %texte;
     font-size: 3em;
