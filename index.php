@@ -77,9 +77,10 @@
                             <input type="radio" name="volaille2" value="poulet3">
                             <img src="images/avatar3.gif" class="thumbnail">
                         </label>           
-                    </fieldset>                           
+                    </fieldset>      
+                    <button class="btn-startgame" id="startGame">Commencer la partie</button>                     
                 </form>
-                <button class="btn-startgame" id="startGame">Commencer la partie</button>         
+                         
             </div>
     </div> 
 
