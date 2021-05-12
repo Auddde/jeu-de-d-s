@@ -18,7 +18,7 @@
                 <img src="images/logo.gif" class="logo">
                 <h1>Combat de coqs</h1> 
             </div>
-            <span class="slogan">Picore 20 maïs et devient le roi de la basse-cour !</span><br>
+            <span class="slogan">Picore 20 maïs et accède au trône !</span><br>
             <button class= "btn-new" id="btnNew">+ Nouvelle partie</button>
         </div>
     </header>
