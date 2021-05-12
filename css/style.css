@@ -577,7 +577,12 @@ h1 {
 @media screen and (max-width: 420px) {
   h1 {
     font-size: 2em;
-    line-height: 1em;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  h1 {
+    line-height: 1;
   }
 }
 
@@ -585,6 +590,12 @@ h2 {
   font-size: 2em;
   margin: 0;
   color: #1b8a4f;
+}
+
+@media screen and (max-width: 350px) {
+  h2 {
+    font-size: 1.5em;
+  }
 }
 
 .slogan {
@@ -692,7 +703,7 @@ button:hover {
 
 .btn-startgame {
   font-size: 1.2em;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .avatar {
@@ -821,6 +832,14 @@ header {
   max-height: 580px;
   background-color: white;
   border-radius: 30px;
+}
+
+@media screen and (max-width: 350px) {
+  .pregame {
+    max-height: -webkit-max-content;
+    max-height: -moz-max-content;
+    max-height: max-content;
+  }
 }
 
 .error {

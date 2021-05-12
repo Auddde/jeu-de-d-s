@@ -19,7 +19,10 @@ header {
     max-height: 580px;
     background-color: white;  
     border-radius : 30px;   
-}
+    @media screen and (max-width: 350px) {
+        max-height: max-content;
+    }
+} 
 
 .error {
     color: #760707; 
