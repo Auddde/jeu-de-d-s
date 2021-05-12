@@ -41,7 +41,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     @media screen and (max-height: 730px) {
-        height: auto;
+        min-height: 100vh;
     }
 }
 
@@ -54,7 +54,7 @@ header {
 .screen {
     width: 50%;
     padding: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     @media screen and (max-width: 415px) {
         width: 40%; 
     }
@@ -63,7 +63,7 @@ header {
 .poulet-section {
     background-color: white; 
     padding:10px; 
-    margin-top:20px; 
+    margin-top:5px; 
     border-radius : 30px;
 }
 

@@ -3,9 +3,9 @@
 .logo {
     width:50px; 
     height: 72px;
-    @media screen and (max-width: 350px) {
+    @media screen and (max-width: 450px) {
         display: none; 
-    }
+    } 
 }
 
 // ICONS
@@ -44,8 +44,9 @@ button:hover {
     right: 15px; 
     top: 40%;
     @media screen and (max-width: $m) {
-        position: static;    
-        margin-top: 10px;
+        position: absolute;    
+        top: 5px;
+        right: 5px;
     }
 }
 
@@ -62,10 +63,7 @@ button:hover {
         width: 170px;
     }
     @media screen and (max-width: 415px) {
-        width: 100px;
-    }
-    @media screen and (max-width: 315px) {
-        width: 80px;
+        width:50px;
     }
 }
 

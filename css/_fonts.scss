@@ -8,6 +8,7 @@ h1 {
     font-size: 2.5em;
     @extend %texte;
     margin: 10px;
+    margin-bottom: 0px;
     @media screen and (max-width: 420px) {
         font-size: 2em;
     }    
