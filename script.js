@@ -1,7 +1,7 @@
 /* ////////////////////////////////   VARIABLES  /////////////////////////////////////////////////// */
 
 // parameters
-var toReach = 10;
+var toReach = 99;
 
 // 3 steps : game, pregame and winner
 var pregame = document.getElementById('pregame') 
