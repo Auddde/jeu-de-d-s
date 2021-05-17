@@ -18,7 +18,7 @@
                 <img src="images/logo.gif" class="logo">
                 <h1>Combat de coqs</h1> 
             </div>
-            <span class="slogan">Picore 100 maïs et accède au trône !</span><br>
+            <span class="slogan">Picore 10 maïs et accède au trône !</span><br>
             <button class= "btn-new" id="btnNew">+</button>
         </div>
     </header>
